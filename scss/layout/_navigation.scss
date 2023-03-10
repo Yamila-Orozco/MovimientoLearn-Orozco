@@ -10,7 +10,7 @@ nav {
 
 .menu {
 	z-index: 100;
-	background-color: nth($color , 7);
+	background-color: nth($color , 3);
 	top: 0;
 	position: fixed;
 	@extend %disposition-nav;

@@ -10,3 +10,8 @@
 }
 
 /*animated text*/
+
+/*padding sections*/
+section  {
+	@include padding(8rem);
+}

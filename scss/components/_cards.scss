@@ -13,7 +13,7 @@
 		.card-btn {
 			&:hover {
 				color: nth($color , 3);
-				background: nth($color , 3);
+				background: nth($color , 5);
                 cursor: pointer;
 			}
 		}
@@ -23,7 +23,7 @@
         .card-btn {
             &:hover {
                 color: nth($color , 3);
-                background: nth($color , 3);
+                background: nth($color , 5);
                 cursor: pointer;
             }
         }
@@ -33,7 +33,7 @@
         .card-btn {
             &:hover {
                 color: nth($color , 3);
-                background: nth($color , 3);
+                background: nth($color , 5);
                 cursor: pointer;
             }
         }
@@ -44,7 +44,7 @@
 		.card-btn {
 			&:hover {
 				color: nth($color , 1 );
-				background:nth($color , 3);
+				background:nth($color , 5);
                 cursor: pointer;
 			}
 		}
@@ -71,3 +71,8 @@
 
 }
 
+.cardimage2 {
+width: 35rem;
+height: 35rem;
+
+}

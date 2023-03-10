@@ -1,0 +1,148 @@
+@media (max-width: 1199.98px) {
+	.formwrapper {
+		flex: column;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.parallax {
+		background-attachment:inherit;
+	}
+}
+@media only screen and (max-width: 480px) {
+	img {
+		width: 100%;
+	}
+}
+
+@media (max-width:1199.98px) {
+	.formwrapper{
+		flex-direction:column;
+	}
+}
+
+
+/* logo queries media queries for different screen sizes*/
+nav .logo {  
+	@media screen and (max-width: 575.99px) {
+	display: none
+	  }
+	
+
+  @media screen and (min-width: 576px) {
+    height: $logo-size-sm;
+    width: $logo-size-sm;
+	margin-right: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: $logo-size-md;
+    width: $logo-size-md;
+	margin-right: 2rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    height: $logo-size-lg;
+    width: $logo-size-lg;
+	margin-right: 2rem;
+  }
+
+  // animation styles for the logo
+  &.lg-animation {
+    transform:rotateX('angle');
+  }
+}
+
+// the spin animation
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* socialicons queries media queries for different screen sizes NO FUNCIONA*/
+
+main .social-icons{
+	@media screen and (max-width: 575.99px) {
+		display: none
+		  }
+		
+	
+	  @media screen and (min-width: 576px) {
+		height: $icons-size-sm;
+		width: $icons-size-sm;
+	  }
+	
+	  @media screen and (min-width: 768px) {
+		height: $icons-size-md;
+		width: $icons-size-md;
+	  }
+	
+	  @media screen and (min-width: 992px) {
+		height: $icons-size-lg;
+		width: $icons-size-lg;
+	  }
+    }	
+
+
+// FONT RESPONSIVE styles for different screen sizes NO FUNCIONA
+@media only screen and (max-width: 480px) {
+	h1 {
+	  font-size: calc(16px + 2vw);
+	}
+	h2 {
+	  font-size: calc(7px + 2vw);
+	}
+	h3 {
+	  font-size: calc(6px + 1.5vw);
+	}
+	p {
+	  font-size: calc(5px + 1.2vw);
+	}
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+	h1 {
+	  font-size: calc(18px + 2vw);
+	}
+	h2 {
+	  font-size: calc(9px + 2vw);
+	}
+	h3 {
+	  font-size: calc(8px + 1.5vw);
+	}
+	p {
+	  font-size: calc(6px + 1.2vw);
+	}
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	h1 {
+	  font-size: calc(20px + 2vw);
+	}
+	h2 {
+	  font-size: calc(11px + 2vw);
+	}
+	h3 {
+	  font-size: calc(10px + 1.5vw);
+	}
+	p {
+	  font-size: calc(7px + 1.2vw);
+	}
+  }
+  
+  @media only screen and (min-width: 1024px) {
+	h1 {
+	  font-size: calc(24px + 2vw);
+	}
+	h2 {
+	  font-size: calc(14px + 2vw);
+	}
+	h3 {
+	  font-size: calc(12px + 1.5vw);
+	}
+	p {
+	  font-size: calc(9px + 1.2vw);
+	}
+  }
+
