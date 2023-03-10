@@ -7,14 +7,23 @@
 
 @import 'base/reset';
 @import 'base/colorlist';
+@import 'base/sizeslist';
 @import 'base/typo';
+@import 'base/maps';
+@import 'base/extends';
 
 @import 'layout/navigation';
+@import 'layout/main';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/forms';
 
 @import 'components/buttons';
+@import 'components/socialicons';
+@import 'components/wrapper';
+@import 'components/cards';
+@import 'components/carousel';
+@import 'components/parallax';
 
 @import 'pages/home';
 @import 'pages/blog';

@@ -1,0 +1,21 @@
+
+%disposition-nav{
+    text-align: center;
+    justify-content: end;
+    text-decoration: none;
+    border-radius: nth($sizes , 2);
+    padding: nth($sizes , 4);
+};
+
+%disposition-btn {
+    padding: nth($sizes , 2);
+    text-decoration: none;
+    border-radius: nth($sizes , 3);
+    margin: nth($sizes , 2);
+    font-family: nth($font-family , 2);
+    font-size: nth($sizes , 4);
+    font-weight: bold;
+    width: nth($sizes , 13);
+	height: nth($sizes , 7);
+    cursor: pointer;
+};

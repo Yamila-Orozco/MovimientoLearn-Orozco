@@ -1,0 +1,65 @@
+.card-btn {
+	all: unset;
+	display: block;
+	margin-left: auto;
+	border: 0.2rem solid nth($color , 5);
+	padding: nth($sizes , 3);
+	border-radius: 25px;
+	font-size: nth($sizes , 5);
+	font-weight: 600;
+	transition: all 0.5s;
+	cursor: pointer;
+	letter-spacing: 0.1rem;
+	&:hover {
+		color: nth($color , 6);
+		background: nth($color , 3);
+	}
+}
+
+.main-btn {
+	all: unset;
+	display: block;
+	margin-left: auto;
+	border: 0.2rem solid nth($color , 5);
+    background-color: nth($color , 1);
+	padding: nth($sizes , 3);
+	border-radius: 25px;
+	font-size: nth($sizes , 5);
+	font-weight: 600;
+	transition: all 0.5s;
+	cursor: pointer;
+	letter-spacing: 0.1rem;
+	&:hover {
+		color: nth($color , 4);
+		background: nth($color , 3);
+	}
+}
+.secondary-btn {
+	all: unset;
+	display: block;
+	margin-left: auto;
+	border: 0.2rem solid nth($color , 5);
+    background-color: nth($color , 3);
+	padding: nth($sizes , 3);
+	border-radius: 25px;
+	font-size: nth($sizes , 5);
+	font-weight: 600;
+	transition: all 0.5s;
+	cursor: pointer;
+	letter-spacing: 0.1rem;
+	&:hover {
+		color: nth($color , 6);
+		background: nth($color , 3);
+	}
+}
+
+
+.buttonssidebyside {
+	display: flex;
+	justify-content: center;
+	min-height: 0px;
+	&:hover {
+		color: nth($color , 7);
+		background: nth($color , 3);
+	}
+}

@@ -1,0 +1,66 @@
+nav {
+	width: 100%;
+}
+
+.lg-animation {
+	&:hover {
+		transform: rotate(-180deg);
+	}
+}
+
+.menu {
+	z-index: 100;
+	background-color: nth($color , 7);
+	top: 0;
+	position: fixed;
+	@extend %disposition-nav;
+}
+li {
+	a {
+		text-decoration:  map-get($decolinks , no-deco);
+		font-family: nth($font-family , 2);
+		font-weight: bold;
+		font-size: nth($sizes , 5 );
+		color: nth($color , 6);
+        @extend %disposition-nav;
+		&:hover {
+			background-color: nth($color , 1);
+			}
+	}
+	display: inline-block;
+	width: 25%;
+	position: relative;
+	font-size: nth($sizes , 3);
+}
+
+ul {
+	text-decoration:  map-get($decolinks , no-deco);
+	list-style: map-get($decolinks , no-deco);
+	font-size: nth($sizes , 2);
+	margin:nth($sizes , 1);
+	padding: nth($sizes , 1);
+	ul {
+		position: absolute;
+		display: none;
+		li {
+			display: block;
+            a {
+
+                font-family: nth($font-family , 2);
+		        font-weight: bold;
+		        font-size: nth($sizes , 3 );
+		        color: nth($color , 4);
+                text-decoration: map-get($decolinks , no-deco);
+                margin:nth($sizes , 7);
+                padding: nth($sizes , 7);
+            }
+		}
+	}
+	li {
+		&:hover {
+			ul {
+				display: block;
+			}
+		}
+	}
+}
