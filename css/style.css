@@ -165,76 +165,85 @@ h1 {
   font-size: 7rem;
   font-weight: 1000;
   font-style: bolder;
+  font-size: 7rem;
   color: #3B3086;
   text-align: center;
 }
 
 h2 {
-  font-family: "source-sans-pro";
+  font-family: "Archistico";
   font-weight: 700;
   font-style: bold;
   color: #F25C78;
+  font-size: 5rem;
   text-align: center;
 }
 
 h3 {
   font-family: "source-sans-pro";
   font-weight: 400;
-  font-style: normal;
+  font-style: bold;
+  font-size: 3.5rem;
   color: #F25C78;
-  text-align: center;
 }
 
 p {
   font-family: "source-sans-pro";
   font-weight: lighter;
-  font-family: #161616;
+  font-family: #F2F2F2;
 }
 
-li a, .menu {
-  text-align: center;
-  justify-content: end;
+p::first-letter {
+  font-size: 3rem;
+  color: #E66BBA;
+}
+
+li a, .dropdown a, h2, h3, p {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   border-radius: 0.5rem;
   padding: 1.25rem;
+  margin: 0.5rem;
 }
 
 nav {
   width: 100%;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-scrolled {
+  background-color: #F2F2F2;
+  backdrop-filter: blur 15rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
 .lg-animation:hover {
   transform: rotate(-180deg);
 }
 
-.menu {
-  z-index: 100;
-  background-color: #F25C78;
-  top: 0;
-  position: fixed;
-}
-
-li {
+li, .dropdown {
   display: inline-block;
   width: 25%;
   position: relative;
   font-size: 1rem;
 }
-li a {
+li a, .dropdown a {
   text-decoration: none;
   font-family: "source-sans-pro";
   font-weight: bold;
   font-size: 1.5rem;
-  color: #F2F2F2;
+  color: #161616;
 }
-li a:hover {
+li a:hover, .dropdown a:hover {
   background-color: #7291F9;
 }
 
 ul {
   text-decoration: none;
   list-style: none;
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   margin: 0rem;
   padding: 0rem;
 }
@@ -247,9 +256,8 @@ ul ul li {
 }
 ul ul li a {
   font-family: "source-sans-pro";
-  font-weight: bold;
-  font-size: 1rem;
-  color: #3B3086;
+  font-size: 1.5rem;
+  color: #161616;
   text-decoration: none;
   margin: 2rem;
   padding: 2rem;
@@ -259,89 +267,22 @@ ul li:hover ul {
 }
 
 main {
-  margin-top: 23rem;
+  margin-top: 17rem;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 footer {
-  width: 100%;
-}
-footer a i {
-  color: #161616;
-  font-size: 2rem;
-  text-align: left;
-  justify-content: flex-end;
-  padding: 1%;
-}
-footer a i:hover {
-  color: #F25C78;
+  max-width: 100%;
 }
 
-.footer-content {
-  background: #3B3086;
-  position: relative;
-}
-
-.single-cta i {
-  color: #F25C78;
-  font-size: 1.75rem;
-  margin-top: 0.5rem;
-}
-
-.cta-text {
-  padding-left: 1rem;
-  display: inline-block;
-}
-.cta-text h4 {
-  color: #161616;
-  font-size: 2nth 0rem, 0.5rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.5rem, 2.75rem 3rem, 3.5rem, 3.75rem, 4rem, 4.5rem, 5rem, 6rem, 7rem, 6;
-  margin-bottom: 0.125rem;
-}
-.cta-text span {
-  color: #161616;
-  font-size: 1.25rem;
-}
-
-.footer-content {
-  position: relative;
-  z-index: 100;
-}
-
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
-}
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #FAE0D8;
-  border: 1px solid #FAE0D8;
-  color: #161616;
-}
-.subscribe-form button {
-  right: 0;
-  background: #F25C78;
-  padding: 13px 20px;
-  border: 1px solid #161616;
-  top: 0;
-}
-.subscribe-form button i {
-  color: #161616;
-  font-size: 22px;
-  transform: rotate(-6deg);
-}
-
-.copyright-area {
-  background: #FAE0D8;
-  padding: 10px;
-}
-
-.copyright-text p {
-  margin: 0;
-  font-size: 14px;
-  color: #161616;
-}
-.copyright-text p a {
-  color: #F2F2F2;
+p.small-text {
+  font-size: 12px;
 }
 
 .formsbackground {
@@ -496,7 +437,9 @@ input[type=checkbox] {
 .main-btn {
   all: unset;
   display: block;
-  margin-left: auto;
+  margin: auto;
+  margin-left: 3rem;
+  margin-top: 0.15rem;
   border: 0.2rem solid #FAE0D8;
   background-color: #7291F9;
   padding: 1rem;
@@ -553,9 +496,10 @@ input[type=checkbox] {
   margin: 2rem;
 }
 .social-icons a i {
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-align: center;
-  border-radius: 50%;
+  padding: 0.5rem;
+  border-radius: 10%;
 }
 .social-icons a i:hover {
   -webkit-transform: scale(1.5);
@@ -567,7 +511,7 @@ input[type=checkbox] {
 
 .icon1 {
   color: #F2F2F2;
-  background-color: #7291F9;
+  background-color: #F25C78;
 }
 
 .icon2 {
@@ -577,7 +521,7 @@ input[type=checkbox] {
 
 .icon3 {
   color: #F2F2F2;
-  background-color: #F25C78;
+  background-color: #7291F9;
 }
 
 .wrapper {
@@ -659,22 +603,24 @@ input[type=checkbox] {
 /* PARALLAX */
 .parallax {
   background-image: url("../assets/texturas/whitepapertexture.png");
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .parallaxblog {
   background-image: url("/assets/texturas/mathpapertexture.png");
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 60px;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .containervideo {

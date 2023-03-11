@@ -10,9 +10,10 @@
         margin: 2rem;
 
         i {
-            font-size: nth($sizes , 12);
+            font-size: nth($sizes , 8);
             text-align: center;
-            border-radius: 50%;
+            padding: nth($sizes , 2);
+            border-radius: 10%;
             &:hover{
                 -webkit-transform: scale(1.5);
                 -moz-transform: scale(1.5);
@@ -26,7 +27,7 @@
 
 .icon1{
     color: nth($color , 6 );
-    background-color: nth($color , 1);
+    background-color: nth($color , 3);
 }
 
 .icon2{
@@ -36,5 +37,5 @@
 
 .icon3{
     color: nth($color , 6 );
-    background-color: nth($color , 3);
+    background-color: nth($color , 1);
 }

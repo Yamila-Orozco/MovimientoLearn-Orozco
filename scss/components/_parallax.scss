@@ -1,20 +1,23 @@
 /* PARALLAX */
 .parallax {
     background-image: url("../assets/texturas/whitepapertexture.png");
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
-    margin-bottom:50px;
+    height: 100vh;
+    width:100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
    }
    
 .parallaxblog {
     background-image: url('/assets/texturas/mathpapertexture.png');
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
-    margin-bottom:60px;
+    height: 100vh;
+    width:100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
    }

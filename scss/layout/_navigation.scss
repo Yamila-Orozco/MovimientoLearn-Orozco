@@ -1,6 +1,17 @@
 nav {
 	width: 100%;
+	transition: background-color 1s ease 0s;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
 }
+
+
+.navbar-scrolled{
+	background-color: nth($color , 6 );
+	backdrop-filter: blur (15rem);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
 
 .lg-animation {
 	&:hover {
@@ -8,21 +19,15 @@ nav {
 	}
 }
 
-.menu {
-	z-index: 100;
-	background-color: nth($color , 3);
-	top: 0;
-	position: fixed;
-	@extend %disposition-nav;
-}
-li {
+
+li, .dropdown {
 	a {
 		text-decoration:  map-get($decolinks , no-deco);
-		font-family: nth($font-family , 2);
+		font-family: nth($font-family , 3);
 		font-weight: bold;
 		font-size: nth($sizes , 5 );
-		color: nth($color , 6);
-        @extend %disposition-nav;
+		color: nth($color , 7);
+        @extend %disposition;
 		&:hover {
 			background-color: nth($color , 1);
 			}
@@ -36,7 +41,7 @@ li {
 ul {
 	text-decoration:  map-get($decolinks , no-deco);
 	list-style: map-get($decolinks , no-deco);
-	font-size: nth($sizes , 2);
+	font-size: nth($sizes , 5);
 	margin:nth($sizes , 1);
 	padding: nth($sizes , 1);
 	ul {
@@ -46,10 +51,9 @@ ul {
 			display: block;
             a {
 
-                font-family: nth($font-family , 2);
-		        font-weight: bold;
-		        font-size: nth($sizes , 3 );
-		        color: nth($color , 4);
+                font-family: nth($font-family , 3);
+		        font-size: nth($sizes , 5 );
+		        color: nth($color , 7);
                 text-decoration: map-get($decolinks , no-deco);
                 margin:nth($sizes , 7);
                 padding: nth($sizes , 7);

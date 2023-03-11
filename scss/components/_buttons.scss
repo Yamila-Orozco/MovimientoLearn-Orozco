@@ -19,7 +19,9 @@
 .main-btn {
 	all: unset;
 	display: block;
-	margin-left: auto;
+	margin: auto;
+	margin-left: 3rem;
+	margin-top: 0.15rem;
 	border: 0.2rem solid nth($color , 5);
     background-color: nth($color , 1);
 	padding: nth($sizes , 3);
