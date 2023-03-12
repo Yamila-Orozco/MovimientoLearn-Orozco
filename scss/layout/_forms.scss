@@ -1,16 +1,61 @@
 .formsbackground {
 	display: flex;
 	flex-wrap: wrap;
-	border-radius: nth($sizes ,4);
-	background: nth($color , 7);
 }
 
 .formstyle {
 	border: 5px;
 	border-color: nth($color , 1);
-	border-style: solid;
-	padding: nth($sizes , 2);
+	padding: nth($sizes , 10);
+	margin: nth($sizes , 4);
 	align-content: center;
+	background-image: linear-gradient(135deg, #F25C78 5%, #7291F9 95%);
+	height: 100%;
+	color: nth($color, 7);
+	border-radius: 0 10px 10px 0;
+	text-align: center;
+	padding: 100px 0;
+	h2 {
+		margin: 30px 0;
+		font-size: 50px;
+		letter-spacing: 3px;
+	}
+	p {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+	button {
+		background-color: transparent;
+		border: 1px solid nth($color, 7);
+		border-radius: nth($sizes , 2);
+		padding: 10px nth($sizes , 2);
+		color: nth($color , 7);
+		font-size: nth($sizes , 2);
+		text-transform: uppercase;
+		transition: 0.2s all ease-in-out;
+		&:hover {
+			color: nth($color , 3);
+			background-color: nth($color , 7);
+			cursor: pointer;
+		}
+	}
+}
+
+input[type="email"] {
+	padding: 10px;
+	margin-bottom: 30px;
+	border: none;
+	background-color: nth($color , 7);
+}
+input[type="password"] {
+	padding: 10px;
+	margin-bottom: 30px;
+	border: none;
+	background-color: nth($color , 7);
+}
+input[type="checkbox"] {
+	margin-right: 5px;
+
 }
 
 

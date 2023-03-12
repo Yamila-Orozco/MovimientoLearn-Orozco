@@ -1,8 +1,6 @@
-.alignhalf {
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
-	&:first-child {
-		align-self: center;
-	}
-}
+.contacto {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+  }
+  

@@ -39,3 +39,17 @@
     color: nth($color , 6 );
     background-color: nth($color , 1);
 }
+
+.icon-go-up {
+            font-size: nth($sizes , 8);
+            text-align: center;
+            padding: nth($sizes , 2);
+            border-radius: 10%;
+            &:hover{
+                -webkit-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -o-transform: scale(1.5);
+                transform: scale(1.5);
+            }
+        }
