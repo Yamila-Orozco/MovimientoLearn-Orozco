@@ -22,55 +22,70 @@
 }
 
 
+
 /* logo queries media queries for different screen sizes*/
-nav .logo {  
-	@media screen and (max-width: 575.99px) {
-	display: none
-	  }
+// nav .logo {  
+// 	@media screen and (max-width: 575.99px) {
+// 	display: none
+// 	  }
 	
 
-  @media screen and (min-width: 576px) {
-    height: $logo-size-sm;
-    width: $logo-size-sm;
-	margin-right: 2rem;
-  }
+//   @media screen and (min-width: 576px) {
+//     height: $logo-size-sm;
+//     width: $logo-size-sm;
+// 	margin-right: 2rem;
+//   }
 
-  @media screen and (min-width: 768px) {
-    height: $logo-size-md;
-    width: $logo-size-md;
-	margin-right: 2rem;
-  }
+//   @media screen and (min-width: 768px) {
+//     height: $logo-size-md;
+//     width: $logo-size-md;
+// 	margin-right: 2rem;
+//   }
 
-  @media screen and (min-width: 992px) {
-    height: $logo-size-lg;
-    width: $logo-size-lg;
-	margin-right: 2rem;
-  }
+//   @media screen and (min-width: 992px) {
+//     height: $logo-size-lg;
+//     width: $logo-size-lg;
+// 	margin-right: 2rem;
+//   }
 
-  // animation styles for the logo
-  &.lg-animation {
-    transform:rotateX('angle');
-  }
-}
+//   // animation styles for the logo
+//   &.lg-animation {
+//     transform:rotateX('angle');
+//   }
+// }
 
-// the spin animation
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
+// // the spin animation
+// @keyframes spin {
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
 
 /* socialicons queries media queries for different screen sizes NO FUNCIONA*/
+main .containervideo{
+	@media screen and (min-width: 0px) and (max-width:320px){
+		width: $video-xs;
+	}
+}
+main .projectTitle{
+	@media screen and (min-width: 0px) and (max-width:320px){
+		font-size: 45px;
+	}
+}
+
+
+
 
 main .social-icons{
-	@media screen and (max-width: 575.99px) {
-		display: none
-		  }
-		
 	
-	  @media screen and (min-width: 576px) {
+	@media screen and (min-width: 0px) and (max-width:321px) {
+		display: none !important; 
+	}
+	
+	  @media screen and (min-width: 328px) and (max-width:576px) {
 		height: $icons-size-sm;
 		width: $icons-size-sm;
+		margin-right: 20px;
 	  }
 	
 	  @media screen and (min-width: 768px) {
@@ -81,6 +96,7 @@ main .social-icons{
 	  @media screen and (min-width: 992px) {
 		height: $icons-size-lg;
 		width: $icons-size-lg;
+		margin-right: $icons-margin-xs;
 	  }
     }	
 

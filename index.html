@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- style bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<!-- MI CSS -->
+
+    <!-- MI CSS -->
     <link rel="stylesheet" href="./css/style.css">
 <!-- iconos -->
     <script src="https://kit.fontawesome.com/74d7ecf815.js" crossorigin="anonymous"></script>
@@ -22,108 +24,55 @@
 <body class="parallax">
 
 <header>
-<!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-scrolled">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-        <!-- Navbar brand -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="./index.html"><img class= "logo lg-animation"src="./assets/img/logo172x172.png" alt="logoindexdemovimientolearn"/></a>
-        <!-- Toggle button -->
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <i class="fas fa-bars"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left links -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="active" aria-current="page" href="./views/nosotros.html">NOSOTRXS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./views/blog.html">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./views/contacto.html">CONTACTO</a>
-                </li>
-            <!-- Navbar dropdown -->
-            <li class="nav-item dropdown">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="../views/tienda.html"
-                    id="navbarDropdown"
-                    role="button"
-                    data-mdb-toggle="dropdown"
-                    aria-expanded="false"
-                >
-                CURSOS
-                </a>
-            <!-- Dropdown menu -->
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                        <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/" target="_blank">CURSOS DOCENTES</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/" target="_blank">CURSOS DE INGLÉS</a>
-                    </li>
-                </ul>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./views/nosotros.html">NOSOTRXS <span class="sr-only"></span></a>
             </li>
-                <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="../views/tienda.html"
-                        id="navbarDropdown"
-                        role="button"
-                        data-mdb-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                    TIENDA
-                    </a>
-                <!-- Dropdown menu -->
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                            <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/" target="_blank">AGENDA</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/" target="_blank">PLANIFICADORES</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/" target="_blank">CALIFICADORES</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/" target="_blank">SECUENCIAS DIDÁCTICAS</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="justify-content-end action-buttons ml-auto navbar navbar-expand-lg">
-                <a href="./views/login.html" class="btn main-btn">INICIAR</a>
-            </div>
+            <li class="nav-item active">
+              <a class="nav-link" href="./views/blog.html">BLOG</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./views/contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="../views/cursos.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                CURSOS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./views/cursos.html">NUESTROS CURSOS</a>
+                <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/">CURSOS DOCENTES</a>
+                <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/">CURSOS DE INGLÉS</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="../views/tienda.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  TIENDA
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./views/tienda.html">TIENDA DE RECURSOS</a>
+                  <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/">AGENDA</a>
+                  <a class="dropdown-item" href="https://learnmovimiento20230308220242.mercadoshops.com.ar/">PLANIFICADORES</a>
+                </div>
+              </li>
+          </ul>
         </div>
-        <!-- Collapsible wrapper -->
-        </div>
-        <!-- Container wrapper -->
-    </nav>
+      </nav>
 </header>
 
 <!-- PANTALLA PPAL -->
 <main class="maincontainer">
     <div class="row">
-        <h1 class="col-12">Movimiento Learn</h1>
+        <h1 class="col-12 projectTitle">Movimiento Learn</h1>
         <img class="col-12 container-fluid containervideo" src="./assets/gif/movlearnexplaingif-final.gif" alt="Video de explicacion de Movimiento Learn.cursos Recursos docentes. Cursos de inglés">
     </div>
 <!-- social icons -->
-    <div class="social-icons d-flex align-items-end flex-column mb-3">
+    <div class="social-icons icons1 d-flex align-items-end flex-column mb-3">
         <div class= 'p-2'>
             <a href="https://www.youtube.com/channel/UCvJVwHw4owKUyUPkPt68BJg" target="_blank"><i class="icon1 fa-brands fa-youtube"></i></a>
         </div>
@@ -139,7 +88,7 @@
 <!-- SECCIÓN CURSOS -->
 <section> 
     <div class="maincontainer"> 
-        <h2 class="row justify-content-center">Mejora tu vida aprendiendo</h2>
+        <h2 class="row justify-content-center projectTitle">Mejora tu vida aprendiendo</h2>
         <p class="row">El aprendizaje continuo a lo largo de toda la vida es esencial para mantenernos actualizados en un mundo en constante cambio. Además, estudios de neurociencias han demostrado que el aprendizaje constante estimula la actividad cerebral, lo que contribuye a una mejor salud cognitiva a medida que envejecemos. El aprendizaje de un idioma como el inglés es particularmente importante ya que es una lengua franca global y puede abrir muchas puertas en términos de oportunidades laborales y educativas. MOVIMIENTO LEARN puede ayudarte a lograrlo.</p>
     </div> 
 
@@ -171,18 +120,18 @@
     <p>Nuestra plataforma de cursos y capacitaciones virtuales ha recibido muchos testimonios positivos de estudiantes satisfechos con su experiencia de aprendizaje en línea. Muchos destacan los beneficios de la flexibilidad y comodidad que ofrece el aprendizaje virtual, ya que pueden estudiar desde cualquier lugar y en cualquier momento que les resulte conveniente. Además, los estudiantes han elogiado el feedback de los docentes, quienes brindan apoyo constante y retroalimentación constructiva para asegurar que cada estudiante alcance su máximo potencial. Nuestra pedagogía innovadora y centrada en el estudiante también ha sido muy apreciada, ya que nuestros cursos están diseñados para ser interactivos y motivadores, lo que facilita el aprendizaje y ayuda a retener mejor los conocimientos adquiridos. Finalmente, muchos estudiantes han disfrutado de la gamificación de nuestro sistema de aprendizaje, lo que les ha permitido aprender de manera divertida y emocionante mientras compiten con otros estudiantes en tiempo real. Únete a nuestra plataforma de cursos y capacitaciones virtuales</p>
 
 <!-- div cards testimonios -->
-        <div class="wrapper">
-        <div class="card">
-            <p class="card-content"><img class="cardimage cardimage2" src="./assets/img/testimonios/1.png" alt="imagen curso inglés"></p>
+        <div class="wrapper containerCard">
+        <div class="card card-content">
+            <img class="cardimage cardimage2" src="./assets/img/testimonios/1.png" alt="imagen curso inglés">
         </div>
-        <div class="card">
-            <p class="card-content"><img class="cardimage cardimage2" src="./assets/img/testimonios/2.png" alt="imagen cursos docentes"></p>
+        <div class="card card-content">
+            <img class="cardimage cardimage2" src="./assets/img/testimonios/2.png" alt="imagen cursos docentes">
         </div>
-        <div class="card">
-            <p class="card-content"><img class="cardimage cardimage2" src="./assets/img/testimonios/3.png" alt="imagen de Recursos para docentes"></p>
+        <div class="card card-content">
+            <img class="cardimage cardimage2" src="./assets/img/testimonios/3.png" alt="imagen de Recursos para docentes">
         </div>
-        <div class="card">
-            <p class="card-content"><img class="cardimage cardimage2" src="./assets/img/testimonios/4.png" alt="imagen del blog docente"></p>
+        <div class="card card-content">
+            <img class="cardimage cardimage2" src="./assets/img/testimonios/4.png" alt="imagen del blog docente">
         </div>
     </div>
 
@@ -238,24 +187,18 @@
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4 pb-1">Buscar Algo</h5>
-
-            <div class="form-outline form-white mb-4">
-            <input type="text" id="formControlLg" class="form-control form-control-lg" />
-            <label class="form-label" for="formControlLg">Busqueda</label>
-            </div>
-
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
             <ul class="fa-ul" style="margin-left: 1.65em;">
-            <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Zona Oeste, Buenos Aires</span>
-            </li>
-            <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">movimientolearn@gmail.com</span>
-            </li>
-            <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 54 11 3655 9914</span>
-            </li>
+                <div class="col-md-6">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-home"></i></span><h5 class="ms-2">Zona Oeste, Buenos Aires</h5>
+                    </li>
+                </div>
+                <div class="col-md-6">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-envelope"></i></span><h5 class="ms-2">movimientolearn@gmail.com</h5>
+                    </li>
+                </div>
             </ul>
         </div>
         <!--Grid column-->
@@ -288,25 +231,11 @@
         © 2023 Copyright:
         <a class="text-white" href="https://movimientolearn.com/">MovimientoLearn.com</a>
       </div>
-    <!-- Copyright -->
 </footer>
 
-<!--Scripts finales -->
-<script> 
-    const navEl = document.querySelector ('.navbar');
-    
-    window.addEventListener('scroll', ()=>{
-        if (window.scrollY>=90){
-            navEl.classList.add('navbar-scrolled');
-    } else if (window.scrollY < 90) {
-            navEl.classList.remove('navbar-scrolled');
-    }
-    });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<!-- script popper -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 
 </body>
 </html>
